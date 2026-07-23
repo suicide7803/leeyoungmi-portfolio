@@ -95,6 +95,7 @@ window.WORKS_DATA = {
     {year:2010, label:"", dates:"2010.12.24–2011.01.17", venue:"예술의전당 CJ 토월극장", cast:"스텔라 스포트라이트 / 사디아 이영미"}]},
 
 "조로": { genre:"뮤지컬", debut:2011, role:"출연", status:"closed", page:"조로",
+  poster:"assets/posters/조로_2011.jpg",
   seasons:[
     {year:2011, label:"", dates:"2011.11.04–2012.01.15", venue:"블루스퀘어 우리은행홀", cast:"이네즈 이영미"}]},
 
@@ -103,6 +104,7 @@ window.WORKS_DATA = {
     {year:2012, label:"", dates:"2012.11.30–2013.02.24", venue:"충무아트센터 중극장 블랙", cast:"파라다이스 이영미"}]},
 
 "맨 오브 라만차": { genre:"뮤지컬", debut:2013, role:"출연", status:"closed", page:"맨 오브 라만차",
+  poster:"assets/posters/맨오브라만차_2013.jpg",
   seasons:[
     {year:2013, label:"", dates:"2013.11.19–2014.02.09", venue:"충무아트센터 대극장", cast:"알돈자 이영미"}]},
 
@@ -119,6 +121,7 @@ window.WORKS_DATA = {
     {year:2015, label:"", dates:"2015.11.21–2016.02.14", venue:"홍익대 대학로 아트센터 대극장", cast:"야채장사 / 매춘부 이영미"}]},
 
 "지저스 크라이스트 수퍼스타": { genre:"뮤지컬", debut:2015, role:"출연", status:"closed", page:"지저스 크라이스트 수퍼스타",
+  poster:"assets/posters/지저스크라이스트수퍼스타_2015.jpg",
   seasons:[
     {year:2015, label:"", dates:"2015.06.07–09.13", venue:"샤롯데씨어터", cast:"마리아 이영미"}]},
 
@@ -177,6 +180,7 @@ window.WORKS_DATA = {
     {year:2021, label:"", dates:"2021.06.24–08.29", venue:"NOL 서경스퀘어 스콘 1관", cast:"엠마 이영미"}]},
 
 "썸씽로튼": { genre:"뮤지컬", debut:2021, role:"출연", status:"closed", page:"썸씽로튼",
+  poster:"assets/posters/썸씽로튼_2021.jpg",
   seasons:[
     {year:2021, label:"", dates:"2021.12.23–2022.04.10", venue:"유니버설아트센터", cast:"비아 이영미"}]},
 
@@ -189,6 +193,7 @@ window.WORKS_DATA = {
     {year:2026, label:"", dates:"2026.06.09–06.14", venue:"대전예술의전당 아트홀", cast:"렘 이영미"}]},
 
 "타오르는 어둠 속에서": { genre:"연극", debut:2023, role:"출연", status:"closed", page:"타오르는 어둠 속에서",
+  poster:"assets/posters/타오르는어둠_2023.jpg",
   seasons:[
     {year:2023, label:"", dates:"2023.08.26–11.26", venue:"링크아트센터 페이코홀", cast:"도냐 페피따 이영미"}]},
 
@@ -203,6 +208,7 @@ window.WORKS_DATA = {
     {year:2024, label:"", dates:"2024.03.13–06.09", venue:"NOL 유니플렉스", cast:"조세핀 마커스 이영미"}]},
 
 "도리안 그레이": { genre:"뮤지컬", debut:2025, role:"출연", status:"closed", page:"도리안 그레이",
+  poster:"assets/posters/도리안그레이_2025.jpg",
   seasons:[
     {year:2025, label:"", dates:"2025.03.30–06.08", venue:"홍익대 대학로 아트센터 대극장", cast:"브랜든 부인 이영미"}]},
 
