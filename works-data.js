@@ -23,6 +23,7 @@ window.WORKS_DATA = {
     {year:2004, label:"", dates:"2004.09.10–10.02", venue:"", cast:"태랑공주 이영미"}]},
 
 "지킬 앤 하이드": { genre:"뮤지컬", debut:2004, role:"출연", status:"closed", page:"지킬 앤 하이드",
+  poster:"assets/posters/지킬앤하이드_2006.webp",
   seasons:[
     {year:2004, label:"", dates:"2004.12.24–2005.02.14", venue:"코엑스 오디토리움", cast:"루시 이영미"},
     {year:2006, label:"", dates:"2006.01.25–02.04", venue:"예술의전당 오페라극장", cast:"루시 이영미"}]},
@@ -37,6 +38,7 @@ window.WORKS_DATA = {
     {year:2008, label:"", dates:"2008.09.26–2009.01.18", venue:"대학로 SH아트홀", cast:"마젠타 이영미"}]},
 
 "헤드윅": { genre:"뮤지컬", debut:2005, role:"출연", status:"closed", page:"헤드윅",
+  poster:"assets/posters/헤드윅_2021.jpg",
   seasons:[
     {year:2005, label:"", dates:"2005.04.12–06.26", venue:"대학로라이브극장", cast:"이츠학 이영미"},
     {year:2005, label:"", dates:"2005.11.01–2006.02.26", venue:"대학로라이브극장", cast:"이츠학 이영미"},
