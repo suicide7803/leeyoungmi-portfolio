@@ -166,7 +166,7 @@ window.WORKS_DATA = {
   poster:"assets/posters/리지_2024.jpg",
   seasons:[
     {year:2020, label:"", dates:"2020.04.02–06.21", venue:"대학로 드림아트센터 1관", cast:"브리짓 설리번 이영미"},
-    {year:2022, label:"", dates:"2022.03.24–06.12", venue:"두산아트센터 연강홀", cast:"브리짓 설리번 이영미"},
+    {year:2022, label:"", dates:"2022.03.24–06.12", venue:"두산아트센터 연강홀", poster:"assets/posters/리지_2022.gif", cast:"브리짓 설리번 이영미"},
     {year:2024, label:"", dates:"2024.09.14–12.01", venue:"두산아트센터 연강홀", cast:"브리짓 설리번 이영미"}]},
 
 "셜록홈즈 - 사라진 아이들": { genre:"뮤지컬", debut:2020, role:"출연", status:"closed", page:"셜록홈즈 - 사라진 아이들",
@@ -175,7 +175,7 @@ window.WORKS_DATA = {
     {year:2020, label:"", dates:"2020.02.15–03.08", venue:"광림아트센터 BBCH홀", cast:"제인 왓슨 이영미"}]},
 
 "땡큐 베리 스트로베리": { genre:"뮤지컬", debut:2021, role:"출연", status:"closed", page:"땡큐 베리 스트로베리",
-  poster:"assets/posters/땡큐베리스트로베리.jpg",
+  poster:"assets/posters/땡큐베리스트로베리_2021.gif",
   seasons:[
     {year:2021, label:"", dates:"2021.06.24–08.29", venue:"NOL 서경스퀘어 스콘 1관", cast:"엠마 이영미"}]},
 
@@ -187,10 +187,10 @@ window.WORKS_DATA = {
 "데스노트": { genre:"뮤지컬", debut:2023, role:"출연", status:"closed", page:"데스노트",
   poster:"assets/posters/데스노트_2023.webp",
   seasons:[
-    {year:2023, label:"", dates:"2023.03.28–06.18", venue:"샤롯데씨어터", cast:"렘 이영미"},
-    {year:2023, label:"", dates:"2023.07.26–08.06", venue:"부산시민회관 대극장", cast:"렘 이영미"},
-    {year:2025, label:"", dates:"2025.10.14–2026.05.25", venue:"디큐브 링크아트센터", cast:"렘 이영미"},
-    {year:2026, label:"", dates:"2026.06.09–06.14", venue:"대전예술의전당 아트홀", cast:"렘 이영미"}]},
+    {year:2023, label:"", dates:"2023.03.28–06.18", venue:"샤롯데씨어터", poster:"assets/posters/데스노트_2023.webp", cast:"렘 이영미"},
+    {year:2023, label:"", dates:"2023.07.26–08.06", venue:"부산시민회관 대극장", poster:"assets/posters/데스노트_부산2023.gif", cast:"렘 이영미"},
+    {year:2025, label:"", dates:"2025.10.14–2026.05.25", venue:"디큐브 링크아트센터", poster:"assets/posters/데스노트_2025.gif", cast:"렘 이영미"},
+    {year:2026, label:"", dates:"2026.06.09–06.14", venue:"대전예술의전당 아트홀", poster:"assets/posters/데스노트_2026.gif", cast:"렘 이영미"}]},
 
 "타오르는 어둠 속에서": { genre:"연극", debut:2023, role:"출연", status:"closed", page:"타오르는 어둠 속에서",
   poster:"assets/posters/타오르는어둠_2023.jpg",
