@@ -256,7 +256,7 @@
     h+='<details class="season" data-reveal'+(openThis?' open':'')+(s.year?' id="s'+s.year+'"':'')+'>';
     h+='<summary>';
     h+='<div class="sthumb">'+(s.poster?'<img src="'+esc(s.poster)+'" alt="" loading="lazy">':'<div class="none">준비중</div>')+'</div>';
-    h+='<div class="smeta"><div class="syr"><b>'+esc(s.year||'')+'</b> · '+esc(s.label||'')+'</div>';
+    h+='<div class="smeta"><div class="syr"><b>'+esc(s.year||'')+'</b>'+(s.label?' · '+esc(s.label):'')+'</div>';
     var sub=[]; if(s.dates)sub.push(esc(s.dates)); if(s.venue)sub.push(esc(s.venue));
     h+='<div class="ssub">'+sub.join(' &nbsp;·&nbsp; ')+'</div></div>';
     h+='<div class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></div>';
