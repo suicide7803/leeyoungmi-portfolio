@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이영미 — 뮤지컬 배우 포트폴리오</title>
+<meta name="description" content="뮤지컬 배우 이영미 — 2000년 무대 데뷔 이후 32편의 작품, 48번의 공연 아카이브.">
+<meta property="og:title" content="이영미 — 뮤지컬 배우 포트폴리오">
+<meta property="og:description" content="헤드윅·서편제·맨 오브 라만차·데스노트까지 — 32작 48시즌의 무대 기록.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{
+    --void:#0d0b08;--panel:#161209;--panel-2:#1a150d;
+    --glass:rgba(24,19,12,.55);--glass-strong:rgba(20,16,10,.78);
+    --line:rgba(239,233,220,.10);--line-strong:rgba(239,233,220,.17);
+    --ink:#efe9dc;--ink-dim:#a89e8a;--ink-faint:#6f6656;
+    --gold:#c9a961;--gold-bright:#e0c17d;--gold-dim:#8a7442;
+    --serif:"Noto Serif KR","Nanum Myeongjo",serif;
+    --sans:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",sans-serif;
+    --ease:cubic-bezier(.16,1,.3,1);
+    --shadow-poster:0 30px 80px -20px rgba(0,0,0,.8),0 8px 24px rgba(0,0,0,.5);
+    --glow-gold:0 0 70px rgba(201,169,97,.16);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--void);color:var(--ink);font-family:var(--sans);
+    line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+
+  /* film grain */
+  body::after{
+    content:"";position:fixed;inset:0;z-index:900;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* scroll progress */
+  .progress{
+    position:fixed;top:0;left:0;right:0;height:2px;z-index:1002;
+    background:linear-gradient(90deg,var(--gold),var(--gold-bright));
+    transform-origin:0 50%;transform:scaleX(0);
+  }
+  html:not(.js) .progress{display:none}
+
+  /* glass nav */
+  nav.top{
+    position:fixed;top:0;left:0;right:0;z-index:1001;
+    background:var(--glass);backdrop-filter:blur(20px) saturate(1.2);-webkit-backdrop-filter:blur(20px) saturate(1.2);
+    border-bottom:1px solid var(--line);
+  }
+  nav.top .inner{
+    max-width:1240px;margin:0 auto;padding:16px 28px;
+    display:flex;align-items:center;justify-content:space-between;gap:20px;
+  }
+  .wordmark{font-family:var(--serif);font-weight:600;font-size:16px;letter-spacing:.02em}
+  .wordmark span{color:var(--gold)}
+  .navlinks{display:flex;gap:26px;font-size:13px;letter-spacing:.08em;color:var(--ink-dim)}
+  .navlinks a{transition:color .2s;cursor:pointer}
+  .navlinks a:hover,.navlinks a:focus-visible{color:var(--gold-bright)}
+  .navlinks a:focus-visible{outline:2px solid var(--gold-dim);outline-offset:4px;border-radius:2px}
+  .navlinks a.nav-db{color:var(--gold);border:1px solid var(--gold-dim);border-radius:99px;padding:5px 13px}
+  .navlinks a.nav-db:hover{background:rgba(201,169,97,.12);color:var(--gold-bright)}
+  @media(max-width:640px){.navlinks{gap:14px;font-size:12px}.navlinks a:nth-child(n+3):not(.nav-db){display:none}}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;min-height:100dvh;display:flex;flex-direction:column;
+    justify-content:center;overflow:hidden;
+    background:radial-gradient(ellipse 120% 80% at 50% 120%, rgba(201,169,97,.05), transparent 60%);
+  }
+  .blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none;will-change:transform}
+  .blob.b1{width:560px;height:560px;left:-140px;top:-120px;background:radial-gradient(circle,rgba(201,169,97,.16),transparent 65%);animation:drift1 28s ease-in-out infinite alternate}
+  .blob.b2{width:640px;height:640px;right:-180px;bottom:-160px;background:radial-gradient(circle,rgba(224,193,125,.10),transparent 65%);animation:drift2 36s ease-in-out infinite alternate}
+  @keyframes drift1{from{transform:translate(0,0) scale(1)}to{transform:translate(90px,60px) scale(1.12)}}
+  @keyframes drift2{from{transform:translate(0,0) scale(1.08)}to{transform:translate(-80px,-70px) scale(1)}}
+  .hero::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(ellipse 90% 70% at 50% 45%, transparent 55%, rgba(6,5,3,.55) 100%);
+  }
+  .hero-inner{position:relative;z-index:2;padding-top:70px}
+  .hero .eyebrow{
+    font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);
+    font-weight:600;margin-bottom:30px;
+  }
+  h1.title{
+    font-family:var(--serif);font-weight:900;
+    font-size:clamp(84px,16vw,190px);line-height:1.02;letter-spacing:.01em;
+    color:var(--ink);text-shadow:0 0 90px rgba(201,169,97,.22);
+  }
+  h1.title .ch{display:inline-block}
+  .hero .tag{
+    margin-top:30px;font-size:clamp(15px,1.6vw,18px);color:var(--ink-dim);
+    max-width:560px;line-height:1.8;
+  }
+  .hero .tag b{color:var(--ink);font-weight:600}
+  .stats{
+    display:flex;flex-wrap:wrap;gap:14px;margin-top:56px;
+  }
+  .stat{
+    flex:1 1 150px;min-width:140px;padding:20px 22px;border-radius:14px;
+    background:var(--glass);border:1px solid var(--line);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  }
+  .stat b{
+    display:block;font-family:var(--serif);font-weight:600;font-size:30px;color:var(--gold-bright);
+    font-variant-numeric:tabular-nums;letter-spacing:.01em;line-height:1.2;
+  }
+  .stat span{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+  .scroll-cue{
+    position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:2;
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    font-size:10px;letter-spacing:.3em;color:var(--ink-faint);text-transform:uppercase;
+  }
+  .scroll-cue::after{
+    content:"";width:1px;height:44px;
+    background:linear-gradient(180deg,var(--gold),transparent);
+    animation:cue 2.2s var(--ease) infinite;transform-origin:top;
+  }
+  @keyframes cue{0%{transform:scaleY(0)}45%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+
+  /* ---------- section scaffolding ---------- */
+  section{position:relative;padding:120px 0}
+  .sec-head{margin-bottom:64px}
+  .sec-head .eyebrow{
+    font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);
+    font-weight:600;margin-bottom:14px;
+  }
+  .sec-head h2{
+    font-family:var(--serif);font-weight:900;font-size:clamp(34px,4.6vw,56px);
+    line-height:1.15;letter-spacing:.005em;text-wrap:balance;
+  }
+  .sec-head p.note{margin-top:14px;font-size:13.5px;color:var(--ink-faint)}
+
+  /* ---------- spotlight panels ---------- */
+  .spot{
+    display:grid;grid-template-columns:minmax(280px,420px) 1fr;
+    gap:clamp(36px,6vw,90px);align-items:center;
+    padding:70px 0;
+  }
+  .spot.rev{grid-template-columns:1fr minmax(280px,420px)}
+  .spot.rev .spot-poster{order:2}
+  .spot-poster{position:relative;border-radius:6px;overflow:hidden;box-shadow:var(--shadow-poster),var(--glow-gold)}
+  .spot-poster img{width:100%;transform:scale(1.12);will-change:transform}
+  .spot-copy .eyebrow{
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
+    font-weight:600;margin-bottom:18px;
+  }
+  .spot-copy h3{
+    font-family:var(--serif);font-weight:900;font-size:clamp(36px,5vw,62px);
+    line-height:1.12;margin-bottom:22px;text-wrap:balance;
+  }
+  .spot-copy p.desc{font-size:16px;color:var(--ink-dim);line-height:1.8;max-width:520px;margin-bottom:26px}
+  .chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:34px}
+  .chip{
+    font-size:12px;letter-spacing:.02em;padding:7px 15px;border-radius:99px;font-weight:500;
+    color:var(--gold-bright);background:rgba(201,169,97,.10);
+    border:1px solid rgba(201,169,97,.26);
+    backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  }
+  .btn-gold{
+    display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+    font-size:14.5px;font-weight:600;letter-spacing:.01em;color:#241a08;
+    padding:13px 28px;border-radius:99px;border:none;
+    background:linear-gradient(180deg,var(--gold-bright),var(--gold));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 0 0 1px rgba(0,0,0,.12),0 6px 22px rgba(201,169,97,.25);
+    transition:transform .18s var(--ease),box-shadow .18s var(--ease);
+  }
+  .btn-gold:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 0 0 1px rgba(0,0,0,.12),0 10px 30px rgba(201,169,97,.34)}
+  .btn-gold:active{transform:scale(.97)}
+  .btn-gold svg{width:15px;height:15px}
+  @media(max-width:760px){
+    .spot,.spot.rev{grid-template-columns:1fr;padding:48px 0}
+    .spot.rev .spot-poster{order:0}
+    .spot-poster{max-width:320px;margin:0 auto}
+  }
+
+  /* ---------- featured grid ---------- */
+  .feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:44px 26px}
+  a.fcard{display:block;cursor:pointer}
+  .fcard .img{border-radius:5px;overflow:hidden;aspect-ratio:3/4;background:var(--panel)}
+  .fcard img{
+    width:100%;height:100%;object-fit:cover;
+    filter:brightness(.88) saturate(.92);
+    transition:filter .35s var(--ease),transform .35s var(--ease);
+  }
+  .fcard .img{box-shadow:0 14px 40px -12px rgba(0,0,0,.7);transition:box-shadow .35s var(--ease),transform .35s var(--ease)}
+  a.fcard:hover .img,a.fcard:focus-visible .img{transform:translateY(-6px);box-shadow:0 24px 60px -16px rgba(0,0,0,.85),0 0 44px rgba(201,169,97,.18)}
+  a.fcard:hover img{filter:brightness(1) saturate(1)}
+  a.fcard:focus-visible{outline:2px solid var(--gold-dim);outline-offset:6px;border-radius:6px}
+  .fcard .meta{margin-top:16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+  .fcard h4{font-family:var(--serif);font-weight:600;font-size:19px;margin-top:6px;letter-spacing:.01em}
+  .fcard p{font-size:13px;color:var(--ink-faint);margin-top:8px;line-height:1.7;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+  /* ---------- awards ---------- */
+  #awards{background:linear-gradient(180deg,transparent,rgba(201,169,97,.03) 50%,transparent)}
+  .awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+  .award{
+    padding:28px 26px;border-radius:16px;
+    background:var(--glass);border:1px solid var(--line);
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    transition:border-color .3s;
+  }
+  .award:hover{border-color:rgba(201,169,97,.35)}
+  .award .yr{font-family:var(--serif);font-weight:900;font-size:34px;color:var(--gold);line-height:1;margin-bottom:14px}
+  .award .nm{font-size:16px;font-weight:700;line-height:1.45}
+  .award .wk{font-size:13px;color:var(--ink-dim);margin-top:7px}
+  .subnote{margin-top:36px;font-size:13.5px;color:var(--ink-dim);line-height:2;max-width:900px}
+  .subnote b{color:var(--ink);font-weight:600}
+
+  /* ---------- upcoming ---------- */
+  .up{
+    border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  }
+  .uprow{
+    display:grid;grid-template-columns:230px 1fr;gap:18px;padding:24px 30px;
+    border-bottom:1px solid var(--line);transition:background .25s;
+  }
+  .uprow:last-child{border-bottom:none}
+  .uprow:hover{background:rgba(201,169,97,.04)}
+  .uprow .when{font-size:14px;color:var(--gold);letter-spacing:.02em;font-weight:600;font-variant-numeric:tabular-nums}
+  .uprow .what b{font-family:var(--serif);font-size:17px;font-weight:600}
+  .uprow .what span{display:block;font-size:13px;color:var(--ink-dim);margin-top:5px}
+  @media(max-width:640px){.uprow{grid-template-columns:1fr;gap:6px;padding:20px 22px}}
+
+  /* ---------- archive ---------- */
+  .year-block{margin-bottom:72px;content-visibility:auto;contain-intrinsic-size:auto 600px}
+  .year{
+    display:flex;align-items:baseline;gap:16px;margin-bottom:26px;
+    border-bottom:1px solid var(--line);padding-bottom:14px;
+  }
+  .year b{font-family:var(--serif);font-weight:900;font-size:40px;color:var(--gold);letter-spacing:.01em;line-height:1}
+  .year small{font-size:12px;letter-spacing:.14em;color:var(--ink-faint);text-transform:uppercase}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:26px 16px}
+  a.card{display:block;cursor:pointer}
+  a.card:focus-visible{outline:2px solid var(--gold-dim);outline-offset:5px;border-radius:5px}
+  .card .img{aspect-ratio:3/4;border-radius:4px;overflow:hidden;background:var(--panel);
+    box-shadow:0 10px 26px -10px rgba(0,0,0,.65);transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+  .card .img img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(.9);transition:filter .3s}
+  .card .img .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;
+    color:var(--ink-faint);font-size:12px;text-align:center;padding:12px;line-height:1.6}
+  a.card:hover .img{transform:translateY(-4px);box-shadow:0 18px 40px -12px rgba(0,0,0,.8),0 0 34px rgba(201,169,97,.14)}
+  a.card:hover .img img{filter:brightness(1) saturate(1)}
+  .card .cap{padding:10px 2px 0}
+  .card .cap b{display:block;font-size:13px;font-weight:600;line-height:1.4}
+  .card .cap span{font-size:11px;color:var(--ink-faint);display:block;margin-top:2px}
+
+  footer{
+    padding:70px 0 90px;font-size:12.5px;color:var(--ink-faint);line-height:2.1;
+    border-top:1px solid var(--line);
+    background:linear-gradient(180deg,transparent,rgba(201,169,97,.03));
+  }
+  footer b{color:var(--ink-dim)}
+
+  /* reveal defaults: hidden only when JS present; reduced-motion sees everything */
+  .js [data-reveal]{opacity:0}
+  @media (prefers-reduced-motion: reduce){
+    .js [data-reveal]{opacity:1}
+    .blob,.scroll-cue::after{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"></div>
+
+<nav class="top">
+  <div class="inner">
+    <div class="wordmark">이영미 <span>·</span> 뮤지컬 배우 포트폴리오</div>
+    <div class="navlinks">
+      <a href="#featured">대표작</a>
+      <a href="#awards">수상</a>
+      <a href="#upcoming">예정</a>
+      <a href="#archive">아카이브</a>
+      <a href="db.html" class="nav-db">DB 열람 →</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow" data-hero>Musical Actor · Stage</div>
+    <h1 class="title" id="heroTitle" data-hero>이영미</h1>
+    <p class="tag" data-hero>1995년 대학가요제 금상으로 출발해 2000년 뮤지컬 무대로 전향한 배우.
+    <b>‘카리스마 여왕’</b>으로 불리며 헤드윅·서편제·맨 오브 라만차·데스노트까지 강렬한 존재감을 남겼다.</p>
+    <div class="stats" id="stats" data-hero>
+      <div class="stat"><b>2000 —</b><span>무대 데뷔</span></div>
+      <div class="stat"><b data-count="32">32</b><span>고유 작품</span></div>
+      <div class="stat"><b data-count="48">48</b><span>공연 프로덕션</span></div>
+      <div class="stat"><b>인기스타상</b><span>한국뮤지컬대상 2005</span></div>
+      <div class="stat"><b>금상</b><span>대학가요제 1995</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true">Scroll</div>
+</header>
+
+<section id="featured">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="eyebrow">Spotlight</div>
+      <h2>무대 위의 기록</h2>
+      <p class="note">작품을 클릭하면 시즌별 상세 페이지로 이동합니다</p>
+    </div>
+    <div id="spotRoot"></div>
+    <div class="feat-grid" id="featRoot" style="margin-top:40px"></div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="eyebrow">Recognition</div>
+      <h2>수상</h2>
+    </div>
+    <div class="awards" data-reveal-group>
+      <div class="award"><div class="yr">2021</div><div class="nm">제5회 한국뮤지컬어워즈 연출상</div><div class="wk">마리 퀴리 — 대상 포함 5관왕</div></div>
+      <div class="award"><div class="yr">2023</div><div class="nm">제61회 K-Theater Awards 대상</div><div class="wk">빵야</div></div>
+      <div class="award"><div class="yr">2024</div><div class="nm">제8회 한국뮤지컬어워즈 연출상</div><div class="wk">멤피스 — 작품상 포함 5관왕</div></div>
+      <div class="award"><div class="yr">2026</div><div class="nm">제62회 백상예술대상 백상연극상 후보</div><div class="wk">미러 A Mirror</div></div>
+    </div>
+    <p class="subnote" data-reveal>
+      <b>한국뮤지컬어워즈 연출상 후보</b> 제1회 로기수 (2017) · 제3회 매디슨 카운티의 다리 (2019) · 제9회 스윙 데이즈 (2025) · 제10회 매디슨 카운티의 다리 (2026) &nbsp;·&nbsp;
+      <b>빵야</b> 2022 창작산실 올해의신작 · 월간 한국연극 2023 공연 베스트 7 &nbsp;·&nbsp;
+      <b>히스토리 보이즈</b> 2014 대한민국 연극대상 작품상 &nbsp;·&nbsp;
+      <b>팬레터</b> 국내 누적 26만 명, 중국·일본·대만 라이선스 &nbsp;·&nbsp;
+      <b>마리 퀴리</b> 2024 런던 채링 크로스 시어터 영어 프로덕션 &nbsp;·&nbsp;
+      <b>KOPIS 2025</b> 연출작 5편 장르별 티켓판매 TOP 10 동시 진입 — 연극·뮤지컬 양 장르 복수 진입은 유일
+    </p>
+  </div>
+</section>
+
+<section id="upcoming">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="eyebrow">Now &amp; Next</div>
+      <h2>진행 중 · 예정</h2>
+    </div>
+    <div class="up" data-reveal>
+      <div class="uprow"><div class="when">2026.07.09 – 10.11</div>
+        <div class="what"><b>더헬멧 (4연)</b> <span>연극 · 홍익대 대학로 아트센터 소극장 · 지이선 작 — 하나의 무대를 벽으로 나눈 분할 공연</span></div></div>
+      <div class="uprow"><div class="when">2026.07.23 – 10.11</div>
+        <div class="what"><b>비더슈탄트 (3연)</b> <span>뮤지컬 · 링크아트센터드림 드림1관 · 정은비 작 — 전곡 교체 개정판</span></div></div>
+      <div class="uprow"><div class="when">2026.07.25 – 08.09</div>
+        <div class="what"><b>경성의 고독한 미식가들</b> <span>연극 초연(1막+2막 합본) · 두산아트센터 Space111 · 박해림 작 — 1930년 경성, 추리와 미식의 관객참여형</span></div></div>
+      <div class="uprow"><div class="when">2026.09.15 – 12.06</div>
+        <div class="what"><b>아나키스트 (재연)</b> <span>뮤지컬 · 예스24아트원 1관 · 재연 창작진 공식 발표 대기</span></div></div>
+      <div class="uprow"><div class="when">2026.11.10 – 2027.02.14</div>
+        <div class="what"><b>인트라무로스</b> <span>연극 · 충무아트센터 중극장 블랙 · Alexis Michalik 작, 한국 초연</span></div></div>
+      <div class="uprow"><div class="when">2026.12.08 – 2027.03.28</div>
+        <div class="what"><b>두 번째 아이</b> <span>연극 · LG아트센터 서울 U+ 스테이지 · 다비드 포앙키노스 원작 · 연출 크레딧 공식 발표 대기</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="archive">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div class="eyebrow">Archive · 2007 — 2027</div>
+      <h2>연도별 전체 기록</h2>
+      <p class="note">시즌 단위 · 반복 공연 포함</p>
+    </div>
+    <div id="archiveRoot"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>데이터 출처</b> — PlayDB 프로필(ManNo 6372) + 티켓링크·예스24·인터파크 단독 판매작 보완.
+    시즌·캐스트는 PlayDB 전수 수집(62작 123시즌), 수상·초연 정보는 연합뉴스·뉴시스·뉴스1·경향신문·더뮤지컬 등 언론 보도 교차검증 (2026-07-19).
+    흥행 데이터는 KOPIS 공연시장 티켓판매 현황 분석 보고서(예술경영지원센터).<br>
+    초기 스태프 경력 — 무대감독: 뮤지컬 「빨래」, 「열한마리 고양이」 외 · 조명디자인: 「판소리 애플그린을 먹다」, 「어항 속 물고기」 외.<br>
+    포스터 저작권은 각 제작사에 있습니다. 이 페이지는 포트폴리오 목적의 아카이브입니다.
+  </div>
+</footer>
+
+<script src="works-data.js"></script>
+<script src="assets/vendor/motion.min.js"></script>
+<script>
+(function(){
+  var W = window.WORKS_DATA || {};
+  function link(t){ return 'work.html#'+encodeURIComponent(t); }
+  var arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+  /* ---- spotlight: the award trio ---- */
+  var SPOTLIGHT = [
+    {t:"헤드윅", tag:["이츠학","6개 시즌 최장수 배역"]},
+    {t:"서편제", tag:["송화 · 동호모 2역","창작 판소리 뮤지컬"]},
+    {t:"맨 오브 라만차", tag:["알돈자","대극장 대표작"]}
+  ];
+  var sh='';
+  SPOTLIGHT.forEach(function(f,i){
+    var w=W[f.t]; if(!w) return;
+    sh+='<article class="spot'+(i%2?' rev':'')+'" data-spot>';
+    sh+='<div class="spot-poster">'+(w.poster?'<img src="'+w.poster+'" alt="'+f.t+' 포스터"'+(i?' loading="lazy"':' fetchpriority="high"')+'>':'')+'</div>';
+    sh+='<div class="spot-copy" data-reveal>';
+    sh+='<div class="eyebrow">'+w.genre+' · '+w.debut+' — '+(w.seasons?w.seasons.length:1)+'시즌</div>';
+    sh+='<h3>'+f.t+'</h3>';
+    if(w.desc) sh+='<p class="desc">'+w.desc+'</p>';
+    sh+='<div class="chips">';
+    (f.tag||[]).forEach(function(g){ sh+='<span class="chip">'+g+'</span>'; });
+    sh+='</div>';
+    sh+='<a class="btn-gold" href="'+link(f.t)+'">시즌별 기록 '+arrow+'</a>';
+    sh+='</div></article>';
+  });
+  document.getElementById('spotRoot').innerHTML=sh;
+
+  /* ---- featured grid: the rest ---- */
+  var FEATURED = [
+    {t:"데스노트"},{t:"지킬 앤 하이드"},{t:"록키호러쇼"},{t:"브루클린"},
+    {t:"지저스 크라이스트 수퍼스타"},{t:"베르나르다 알바"},{t:"리지"},{t:"금발이 너무해"}
+  ];
+  var fh='';
+  FEATURED.forEach(function(f){
+    var w=W[f.t]; if(!w) return;
+    fh+='<a class="fcard" href="'+link(f.t)+'" data-card>';
+    fh+='<div class="img">'+(w.poster?'<img src="'+w.poster+'" alt="'+f.t+'" loading="lazy">':'')+'</div>';
+    fh+='<div class="meta">'+w.genre+' · '+w.debut+' · '+(w.seasons?w.seasons.length:1)+'시즌</div>';
+    fh+='<h4>'+f.t+'</h4>';
+    if(w.desc) fh+='<p>'+w.desc+'</p>';
+    fh+='</a>';
+  });
+  document.getElementById('featRoot').innerHTML=fh;
+  document.getElementById('featRoot').setAttribute('data-reveal-group','');
+
+  /* ---- archive ---- */
+  var byYear={};
+  Object.keys(W).forEach(function(t){
+    (W[t].seasons||[]).forEach(function(s){
+      (byYear[s.year]=byYear[s.year]||[]).push({t:t,s:s,w:W[t]});
+    });
+  });
+  var years=Object.keys(byYear).map(Number).sort(function(a,b){return b-a;});
+  var ah='';
+  years.forEach(function(y){
+    var items=byYear[y];
+    ah+='<div class="year-block"><div class="year" data-reveal><b>'+y+'</b><small>'+items.length+' Productions</small></div><div class="grid" data-reveal-group>';
+    items.forEach(function(it){
+      var poster=it.s.poster||it.w.poster;
+      ah+='<a class="card" href="'+link(it.t)+'">';
+      ah+='<div class="img">'+(poster?'<img src="'+poster+'" loading="lazy" alt="'+it.t+'">':'<div class="ph">'+it.t+'</div>')+'</div>';
+      ah+='<div class="cap"><b>'+it.t+'</b><span>'+it.w.genre+' · '+(it.s.label||'')+'</span><span>'+(it.s.venue?it.s.venue.split(' — ')[0].split(' + ')[0]:'')+'</span></div>';
+      ah+='</a>';
+    });
+    ah+='</div></div>';
+  });
+  document.getElementById('archiveRoot').innerHTML=ah;
+
+  /* ================= motion ================= */
+  var M = window.Motion;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!M || reduced){
+    document.documentElement.classList.remove('js');
+    return;
+  }
+  var EASE=[.16,1,.3,1];
+
+  /* scroll progress */
+  M.scroll(M.animate('.progress',{scaleX:[0,1]},{easing:'linear'}));
+
+  /* hero: cinematic opening — split name into chars, staggered rise */
+  var titleEl=document.getElementById('heroTitle');
+  var chars=titleEl.textContent.split('');
+  titleEl.textContent='';
+  chars.forEach(function(c){
+    var s=document.createElement('span');
+    s.className='ch';s.textContent=c;
+    titleEl.appendChild(s);
+  });
+  var heroBits=document.querySelectorAll('[data-hero]');
+  heroBits.forEach(function(el){el.style.opacity='0';});
+  M.animate('.hero .eyebrow',{opacity:[0,1],transform:['translateY(18px)','translateY(0)']},{duration:.9,easing:EASE,delay:.15});
+  document.querySelectorAll('#heroTitle .ch').forEach(function(ch,i){
+    ch.style.opacity='0';
+    M.animate(ch,{opacity:[0,1],transform:['translateY(60px)','translateY(0)']},{duration:1.1,easing:EASE,delay:.3+i*.09});
+  });
+  titleEl.style.opacity='1';
+  M.animate('.hero .tag',{opacity:[0,1],transform:['translateY(24px)','translateY(0)']},{duration:.9,easing:EASE,delay:.7});
+  M.animate('#stats',{opacity:[0,1],transform:['translateY(28px)','translateY(0)']},{duration:1,easing:EASE,delay:.9});
+
+  /* hero: scroll-linked exit (parallax fade) */
+  var hero=document.querySelector('.hero');
+  M.scroll(M.animate('.hero-inner',{transform:['translateY(0)','translateY(-90px)'],opacity:[1,0]},{easing:'linear'}),
+    {target:hero,offset:['start start','end start']});
+
+  /* stat count-up */
+  function countUp(el){
+    var n=+el.getAttribute('data-count'),t0=null;
+    function frame(ts){
+      if(!t0)t0=ts;
+      var p=Math.min((ts-t0)/1500,1);
+      var e=1-Math.pow(2,-10*p); /* expo-out */
+      el.textContent=Math.round(e*n);
+      if(p<1)requestAnimationFrame(frame);else el.textContent=n;
+    }
+    requestAnimationFrame(frame);
+  }
+  M.inView('#stats',function(){
+    document.querySelectorAll('[data-count]').forEach(countUp);
+  },{amount:.4});
+
+  /* generic reveals */
+  M.inView('[data-reveal]',function(info){
+    var el=info.target||info;
+    M.animate(el,{opacity:[0,1],transform:['translateY(26px)','translateY(0)']},{duration:.85,easing:EASE});
+  },{margin:'0px 0px -60px 0px'});
+
+  /* grouped staggered reveals */
+  M.inView('[data-reveal-group]',function(info){
+    var el=info.target||info;
+    var kids=Array.prototype.slice.call(el.children);
+    kids.forEach(function(k){k.style.opacity='0';});
+    M.animate(kids,{opacity:[0,1],transform:['translateY(30px)','translateY(0)']},
+      {duration:.8,easing:EASE,delay:M.stagger(.06)});
+  },{margin:'0px 0px -80px 0px'});
+
+  /* spotlight posters: scroll-linked inner parallax */
+  document.querySelectorAll('[data-spot]').forEach(function(panel){
+    var img=panel.querySelector('.spot-poster img');
+    if(!img)return;
+    M.scroll(M.animate(img,{transform:['scale(1.12) translateY(4%)','scale(1.12) translateY(-4%)']},{easing:'linear'}),
+      {target:panel,offset:['start end','end start']});
+  });
+})();
+</script>
+</body>
+</html>
