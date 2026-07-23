@@ -10,17 +10,18 @@
 <script>document.documentElement.classList.add('js');</script>
 <style>
   :root{
-    --void:#0d0b08;--panel:#161209;--panel-2:#1a150d;
-    --glass:rgba(24,19,12,.55);--glass-strong:rgba(20,16,10,.82);
-    --line:rgba(239,233,220,.10);--line-strong:rgba(239,233,220,.17);
-    --ink:#efe9dc;--ink-dim:#a89e8a;--ink-faint:#6f6656;
-    --gold:#c9a961;--gold-bright:#e0c17d;--gold-dim:#8a7442;
+    /* 모던 로즈 부티크 · 화이트 + 딥 로즈 */
+    --void:#FCF1F5;--panel:#FFFFFF;--panel-2:#FBE9F0;
+    --glass:rgba(255,248,251,.72);--glass-strong:rgba(255,245,249,.90);
+    --line:rgba(58,34,48,.10);--line-strong:rgba(58,34,48,.18);
+    --ink:#3A2230;--ink-dim:#7c5566;--ink-faint:#b193a0;
+    --gold:#D94F82;--gold-bright:#E8709F;--gold-dim:#B23A67;
     --serif:"Noto Serif KR","Nanum Myeongjo",serif;
     --sans:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",sans-serif;
     --ease:cubic-bezier(.16,1,.3,1);
-    --shadow-poster:0 30px 80px -20px rgba(0,0,0,.8),0 8px 24px rgba(0,0,0,.5);
-    --shadow-poster-sm:0 12px 30px -10px rgba(0,0,0,.6),0 2px 8px rgba(0,0,0,.35);
-    --glow-gold:0 0 70px rgba(201,169,97,.16);
+    --shadow-poster:0 30px 80px -24px rgba(140,45,85,.30),0 8px 24px rgba(140,45,85,.14);
+    --shadow-poster-sm:0 12px 30px -12px rgba(140,45,85,.20),0 2px 8px rgba(140,45,85,.12);
+    --glow-gold:0 0 70px rgba(217,79,130,.14);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -47,12 +48,12 @@
     transition:border-color .2s,color .2s}
   .backbtn:hover{border-color:var(--gold-dim);color:var(--gold-bright)}
   .backbtn.gold{color:#241a08;background:linear-gradient(180deg,var(--gold-bright),var(--gold));border:none;
-    box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 0 0 1px rgba(0,0,0,.12),0 4px 14px rgba(201,169,97,.22)}
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 0 0 1px rgba(0,0,0,.12),0 4px 14px rgba(217,79,130,.22)}
   .backbtn svg{width:12px;height:12px}
   .backbtn:focus-visible{outline:2px solid var(--gold-dim);outline-offset:3px}
 
   .stage{position:relative;overflow:hidden;
-    background:radial-gradient(ellipse 100% 90% at 50% -20%, rgba(201,169,97,.08), transparent 60%)}
+    background:radial-gradient(ellipse 100% 90% at 50% -20%, rgba(217,79,130,.08), transparent 60%)}
   header.detail{position:relative;z-index:1;display:grid;grid-template-columns:320px 1fr;gap:52px;
     padding:120px 0 56px;align-items:start}
   @media(max-width:760px){header.detail{grid-template-columns:1fr;gap:32px;padding-top:100px}}
@@ -63,16 +64,16 @@
     color:var(--ink-faint);font-size:13px;background:var(--panel)}
   .badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
   .badge{font-size:11.5px;letter-spacing:.04em;padding:5px 12px;border-radius:99px;font-weight:600;
-    background:rgba(201,169,97,.12);color:var(--gold-bright);border:1px solid rgba(201,169,97,.28)}
+    background:rgba(217,79,130,.12);color:var(--gold-bright);border:1px solid rgba(217,79,130,.28)}
   .badge.plain{background:rgba(239,233,220,.06);color:var(--ink-dim);border-color:var(--line)}
   h1{font-family:var(--serif);font-weight:900;font-size:clamp(38px,5.5vw,64px);line-height:1.1;
-    letter-spacing:.005em;text-wrap:balance;text-shadow:0 0 60px rgba(201,169,97,.18)}
+    letter-spacing:.005em;text-wrap:balance;text-shadow:0 0 60px rgba(217,79,130,.18)}
   .credit{margin-top:16px;font-size:15px;color:var(--ink-dim);line-height:1.9}
   .credit b{color:var(--ink);font-weight:600}
   .desc{margin-top:20px;font-size:15.5px;color:var(--ink-dim);line-height:1.85;max-width:600px}
   .awards{margin-top:24px;display:flex;flex-wrap:wrap;gap:9px}
-  .award-chip{font-size:12px;color:var(--gold-bright);background:rgba(201,169,97,.1);
-    border:1px solid rgba(201,169,97,.26);border-radius:99px;padding:5px 14px}
+  .award-chip{font-size:12px;color:var(--gold-bright);background:rgba(217,79,130,.1);
+    border:1px solid rgba(217,79,130,.26);border-radius:99px;padding:5px 14px}
 
   .facts{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
   .fact{flex:1 1 120px;min-width:110px;padding:16px 18px;border-radius:13px;
@@ -94,7 +95,7 @@
   .season>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:56px 1fr auto;gap:18px;
     align-items:center;padding:18px 22px;transition:background .2s}
   .season>summary::-webkit-details-marker{display:none}
-  .season>summary:hover{background:rgba(201,169,97,.04)}
+  .season>summary:hover{background:rgba(217,79,130,.04)}
   .season>summary:focus-visible{outline:2px solid var(--gold-dim);outline-offset:-2px}
   .season .sthumb{width:56px;height:75px;border-radius:5px;overflow:hidden;background:var(--panel);box-shadow:var(--shadow-poster-sm)}
   .season .sthumb img{width:100%;height:100%;object-fit:cover}
@@ -124,7 +125,7 @@
   .tourlist{list-style:none;display:grid;gap:7px}
   .tourlist li{font-size:13.5px;color:var(--ink-dim);padding-left:18px;position:relative;line-height:1.65}
   .tourlist li::before{content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;background:var(--gold-dim)}
-  .ach{font-size:14px;color:var(--ink);line-height:1.8;background:rgba(201,169,97,.06);
+  .ach{font-size:14px;color:var(--ink);line-height:1.8;background:rgba(217,79,130,.06);
     border-left:2px solid var(--gold);border-radius:0 8px 8px 0;padding:12px 16px}
   .srcs{display:flex;flex-wrap:wrap;gap:6px}
   .srcs span,.srcs a{font-size:11.5px;color:var(--ink-faint);border:1px solid var(--line);border-radius:6px;padding:3px 9px}
@@ -139,7 +140,7 @@
   .ex-block h3{font-family:var(--serif);font-size:19px;font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:10px}
   .ex-block h3 .tag{font-family:var(--sans);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
     padding:3px 9px;border-radius:99px}
-  .ex-block h3 .tag.live{color:var(--gold-bright);background:rgba(201,169,97,.12);border:1px solid rgba(201,169,97,.28)}
+  .ex-block h3 .tag.live{color:var(--gold-bright);background:rgba(217,79,130,.12);border:1px solid rgba(217,79,130,.28)}
   .ex-block h3 .tag.soon{color:var(--ink-faint);background:rgba(239,233,220,.05);border:1px solid var(--line)}
   blockquote.quote{margin:0 0 14px;padding:20px 24px;border-radius:14px;background:var(--panel);border:1px solid var(--line);
     position:relative}
