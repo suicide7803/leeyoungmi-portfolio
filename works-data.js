@@ -198,6 +198,7 @@ window.WORKS_DATA = {
     {year:2023, label:"", dates:"2023.08.26–11.26", venue:"링크아트센터 페이코홀", cast:"도냐 페피따 이영미"}]},
 
 "연남장 캬바레 - SONG FOR MEE": { genre:"콘서트", debut:2024, role:"출연", status:"closed", page:"연남장 캬바레 - SONG FOR MEE",
+  poster:"assets/posters/연남장캬바레_2024.jpg",
   seasons:[
     {year:2024, label:"연남장 캬바레", dates:"2024.07.20", venue:"연남장 (서울 연희로)"},
     {year:2024, label:"세종 시크릿 시어터", dates:"2024.11.01", venue:"세종"}]},

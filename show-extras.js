@@ -59,6 +59,15 @@ window.SHOW_EXTRAS = {
       { src: "assets/photos/오늘처음만드는뮤지컬/오늘처음_2018_still1.jpg", caption: "무대 위 (2018, 대학로 TOM 2관)", credit: "언론 공개" }
     ],
     photos_note: "언론 공개 프로덕션 스틸. 저작권은 제작사에 있으며 아카이브 목적으로 크레딧과 함께 게시."
+  },
+
+  "연남장 캬바레 - SONG FOR MEE": {
+    photos: [
+      { src: "assets/photos/연남장캬바레/연남장_2024_still1.jpg", caption: "SONG FOR MEE — 연남장 캬바레 (2024.07)", credit: "아트코리아방송 · 이용선" },
+      { src: "assets/photos/연남장캬바레/연남장_2024_still2.jpg", caption: "기타 넘버 (2024, 연남장)", credit: "아트코리아방송 · 이용선" },
+      { src: "assets/photos/연남장캬바레/연남장_2024_still3.jpg", caption: "자전적 스토리텔링 무대 (2024, 연남장)", credit: "아트코리아방송 · 이용선" }
+    ],
+    photos_note: "언론(아트코리아방송) 공개 공연 사진. 저작권은 촬영자·매체에 있으며 아카이브 목적으로 크레딧과 함께 게시."
   }
 
 };
