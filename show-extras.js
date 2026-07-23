@@ -40,6 +40,20 @@ window.SHOW_EXTRAS = {
     press_note: "이영미 배우가 브리짓 설리번 배역을 설명한 인터뷰 발췌. 저작권은 매체에 있음."
   },
 
+  "헤드윅": {
+    press: [
+      { quote: "시원한 가창력을 선보인 이츠학 이영미의 무대 역시 빼놓을 수 없다.", source: "뉴스투데이", date: "2021.08", url: "http://www.ntoday.co.kr/news/articleView.html?idxno=80266" }
+    ],
+    press_note: "언론 리뷰의 이영미(이츠학) 무대 평. 저작권은 매체에 있음."
+  },
+
+  "지저스 크라이스트 수퍼스타": {
+    press: [
+      { quote: "마리아의 독립적이며 주체적인 면모를 그려내는 점에선 훌륭했다.", source: "스포츠Q", date: "2015.06", url: "http://www.sportsq.co.kr/news/articleView.html?idxno=50160" }
+    ],
+    press_note: "언론 리뷰의 이영미(마리아) 평. 저작권은 매체에 있음."
+  },
+
   "서편제": {
     photos: [
       { src: "assets/photos/서편제/서편제_2012_still1.jpg", caption: "송화 (2012, 유니버설아트센터)", credit: "언론 공개" }
@@ -48,6 +62,10 @@ window.SHOW_EXTRAS = {
   },
 
   "맨 오브 라만차": {
+    press: [
+      { quote: "공연장의 공기를 찢어발기는 듯한 강철음색도 여전하다. 이영미의 연기가 한창 물이 올라 있다는 느낌이다.", source: "스포츠동아", date: "2014.03", url: "https://n.news.naver.com/mnews/article/020/0002548346" }
+    ],
+    press_note: "언론 리뷰의 이영미(알돈자) 연기 평. 저작권은 매체에 있음.",
     photos: [
       { src: "assets/photos/맨오브라만차/맨오브라만차_2013_still1.jpg", caption: "알돈자 (2013, 충무아트홀 대극장)", credit: "언론 공개" }
     ],

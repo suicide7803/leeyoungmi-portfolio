@@ -1,5 +1,5 @@
 // 이영미 작품 데이터 — 자동 생성
-// 원천: shows/*.md frontmatter · 생성: 2026-07-23 · build_portfolio_data.py
+// 원천: shows/*.md frontmatter · 생성: 2026-07-24 · build_portfolio_data.py
 // 직접 편집 금지 — 작품 페이지 frontmatter를 고치고 재빌드할 것.
 window.WORKS_DATA = {
 
