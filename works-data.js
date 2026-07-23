@@ -76,6 +76,14 @@ window.WORKS_DATA = {
     {year:2009, label:"", dates:"2009.09.08–11.01", venue:"충무아트센터 대극장", cast:"실비아 이영미"},
     {year:2010, label:"", dates:"2010.03.27–06.20", venue:"한전아트센터", cast:"실비아 이영미"}]},
 
+"이영미 콘서트": { genre:"콘서트", debut:2009, role:"단독 콘서트", status:"closed", page:"이영미 콘서트",
+  poster:"assets/posters/이영미콘서트_2019.jpg",
+  seasons:[
+    {year:2009, label:"음반 발매 콘서트", dates:"2009.02.13", venue:"롤링홀"},
+    {year:2009, label:"2nd 라이브 콘서트 (싱글 SHE)", dates:"2009.03.29", venue:"롤링홀"},
+    {year:2011, label:"이영미 콘서트", dates:"2011.05.06", venue:"롤링홀"},
+    {year:2019, label:"Song For Me (데뷔 20주년)", dates:"2019.07.01", venue:"롤링홀"}]},
+
 "서편제": { genre:"뮤지컬", debut:2010, role:"출연", status:"closed", page:"서편제",
   poster:"assets/posters/서편제_2010.jpg",
   seasons:[
@@ -184,6 +192,11 @@ window.WORKS_DATA = {
   seasons:[
     {year:2023, label:"", dates:"2023.08.26–11.26", venue:"링크아트센터 페이코홀", cast:"도냐 페피따 이영미"}]},
 
+"연남장 캬바레 - SONG FOR MEE": { genre:"콘서트", debut:2024, role:"출연", status:"closed", page:"연남장 캬바레 - SONG FOR MEE",
+  seasons:[
+    {year:2024, label:"연남장 캬바레", dates:"2024.07.20", venue:"연남장 (서울 연희로)"},
+    {year:2024, label:"세종 시크릿 시어터", dates:"2024.11.01", venue:"세종"}]},
+
 "웨스턴 스토리": { genre:"뮤지컬", debut:2024, role:"출연", status:"closed", page:"웨스턴 스토리",
   poster:"assets/posters/웨스턴스토리_2024.jpg",
   seasons:[
@@ -197,5 +210,10 @@ window.WORKS_DATA = {
   poster:"assets/posters/베르테르25주년_2025.jpg",
   seasons:[
     {year:2025, label:"", dates:"2025.01.17–03.16", venue:"디큐브 링크아트센터", cast:"오르카 이영미"}]},
+
+"브로크백 마운틴": { genre:"음악극", debut:2026, role:"출연", status:"running", page:"브로크백 마운틴",
+  poster:"assets/posters/브로크백마운틴_2026.webp",
+  seasons:[
+    {year:2026, label:"한국 초연", dates:"2026.06.23–09.06", venue:"예스24아트원 1관", cast:"볼라디어 이영미"}]},
 
 };

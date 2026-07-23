@@ -251,7 +251,7 @@
 </div>
 
 <footer>
-  <b>데이터</b> — shows/*.md frontmatter에서 자동 생성(39작 64시즌). 출처: PlayDB·더뮤지컬 인물DB.
+  <b>데이터</b> — shows/*.md frontmatter에서 자동 생성(42작 71시즌). 출처: PlayDB·더뮤지컬 인물DB.
   극장은 건물 단위로 정규화, 제작사는 ㈜·공동제작 표기를 병합했습니다. 포스터 저작권은 각 제작사에 있습니다.
 </footer>
 
@@ -265,7 +265,7 @@
   function workLink(w){ return 'work.html#'+encodeURIComponent(w.title); }
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
-  var STATUS_LABEL = {closed:'종료',repertoire:'레퍼토리',upcoming:'예정',development:'개발중'};
+  var STATUS_LABEL = {running:'공연 중',closed:'종료',repertoire:'레퍼토리',upcoming:'예정',development:'개발중'};
   function statusLabel(s){return STATUS_LABEL[s]||s||'—';}
   function roleClass(w){return w.role==='연출'?'연출':'비연출';}
 
@@ -350,7 +350,7 @@
     // section ordering — '(미상)'은 항상 맨 뒤로
     function unknown(k){return k==='(미상)'?1:0;}
     if(g==='year') secs.sort(function(a,b){return (+b.key)-(+a.key);});
-    else if(g==='status'){ var so=['예정','레퍼토리','개발중','종료']; secs.sort(function(a,b){return so.indexOf(a.key)-so.indexOf(b.key);}); }
+    else if(g==='status'){ var so=['공연 중','예정','레퍼토리','개발중','종료']; secs.sort(function(a,b){return so.indexOf(a.key)-so.indexOf(b.key);}); }
     else if(g==='immersive') secs.sort(function(a,b){return (a.key==='이머시브 공연'?0:1)-(b.key==='이머시브 공연'?0:1);});
     else secs.sort(function(a,b){return unknown(a.key)-unknown(b.key) || b.works.length-a.works.length || cmp(a.key,b.key);});
     return secs;

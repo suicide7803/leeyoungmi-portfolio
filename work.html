@@ -198,7 +198,7 @@
   var seasonHint=(parts[1]||'').trim();
 
   function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-  function statusLabel(s){return {repertoire:'레퍼토리',upcoming:'예정',development:'개발중',closed:'종료'}[s]||'';}
+  function statusLabel(s){return {running:'공연 중',repertoire:'레퍼토리',upcoming:'예정',development:'개발중',closed:'종료'}[s]||'';}
 
   var work=null;
   for(var i=0;i<DB.length;i++){ if(DB[i].title===key||DB[i].page===key){work=DB[i];break;} }
