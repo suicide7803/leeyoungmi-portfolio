@@ -12,6 +12,7 @@ window.WORKS_DATA = {
     {year:2001, label:"", dates:"2001.03.14–03.18", venue:"", cast:"앙상블 이영미"}]},
 
 "그리스": { genre:"뮤지컬", debut:2003, role:"출연", status:"closed", page:"그리스",
+  poster:"assets/posters/그리스_2005.gif",
   seasons:[
     {year:2003, label:"", dates:"2003.05.20–06.29", venue:"", cast:"리조 이영미"},
     {year:2003, label:"", dates:"2003.08.08–11.07", venue:"", cast:"리조 이영미"},
@@ -33,6 +34,7 @@ window.WORKS_DATA = {
     {year:2004, label:"", dates:"2004.01.03–06.27", venue:"", cast:"빨강바지 / 영자 / 창녀 / 여사원 등 이영미"}]},
 
 "록키호러쇼": { genre:"뮤지컬", debut:2005, role:"출연", status:"closed", page:"록키호러쇼",
+  poster:"assets/posters/록키호러쇼_2008.gif",
   seasons:[
     {year:2005, label:"", dates:"2005.12.17–2006.01.15", venue:"", cast:"마젠타 이영미"},
     {year:2008, label:"", dates:"2008.09.26–2009.01.18", venue:"대학로 SH아트홀", cast:"마젠타 이영미"}]},
@@ -50,28 +52,34 @@ window.WORKS_DATA = {
     {year:2021, label:"", dates:"2021.07.30–10.31", venue:"충무아트센터 대극장", cast:"이츠학 이영미"}]},
 
 "밴디트": { genre:"뮤지컬", debut:2006, role:"출연", status:"closed", page:"밴디트",
+  poster:"assets/posters/밴디트_2006.gif",
   seasons:[
     {year:2006, label:"", dates:"2006.06.04–07.17", venue:"동숭아트센터 동숭홀", cast:"루나 이영미"},
     {year:2006, label:"", dates:"2006.09.01–10.29", venue:"JTN 아트홀 2관", cast:"루나 이영미"}]},
 
 "밴디트-또 다른 시작": { genre:"뮤지컬", debut:2007, role:"출연", status:"closed", page:"밴디트-또 다른 시작",
+  poster:"assets/posters/밴디트또다른시작_2008.gif",
   seasons:[
     {year:2007, label:"", dates:"2007.11.30–12.31", venue:"", cast:"최영서 이영미"},
     {year:2008, label:"", dates:"2008.01.09–03.09", venue:"동양예술극장 1관", cast:"최영서 이영미"}]},
 
 "펌프보이즈": { genre:"뮤지컬", debut:2007, role:"출연", status:"closed", page:"펌프보이즈",
+  poster:"assets/posters/펌프보이즈_2007.gif",
   seasons:[
     {year:2007, label:"", dates:"2007.08.04–10.14", venue:"JTN 아트홀 2관", cast:"Rhetta Cupp 이영미"}]},
 
 "즐거운 인생": { genre:"뮤지컬", debut:2008, role:"출연", status:"closed", page:"즐거운 인생",
+  poster:"assets/posters/즐거운인생_2008.gif",
   seasons:[
     {year:2008, label:"", dates:"2008.11.21–2009.02.08", venue:"충무아트센터 중극장 블랙", cast:"선영 이영미"}]},
 
 "금발이 너무해": { genre:"뮤지컬", debut:2009, role:"출연", status:"closed", page:"금발이 너무해",
+  poster:"assets/posters/금발이너무해_2009.gif",
   seasons:[
     {year:2009, label:"", dates:"2009.11.14–2010.03.14", venue:"코엑스아티움 우리은행홀", cast:"비비안 이영미"}]},
 
 "올슉업": { genre:"뮤지컬", debut:2009, role:"출연", status:"closed", page:"올슉업",
+  poster:"assets/posters/올슉업_2010.gif",
   seasons:[
     {year:2009, label:"", dates:"2009.09.08–11.01", venue:"충무아트센터 대극장", cast:"실비아 이영미"},
     {year:2010, label:"", dates:"2010.03.27–06.20", venue:"한전아트센터", cast:"실비아 이영미"}]},
@@ -91,6 +99,7 @@ window.WORKS_DATA = {
     {year:2012, label:"", dates:"2012.03.02–04.22", venue:"유니버설아트센터", cast:"송화 이영미"}]},
 
 "코로네이션 볼": { genre:"뮤지컬", debut:2010, role:"출연", status:"closed", page:"코로네이션 볼",
+  poster:"assets/posters/코로네이션볼_2010.gif",
   seasons:[
     {year:2010, label:"", dates:"2010.12.24–2011.01.17", venue:"예술의전당 CJ 토월극장", cast:"스텔라 스포트라이트 / 사디아 이영미"}]},
 
@@ -100,6 +109,7 @@ window.WORKS_DATA = {
     {year:2011, label:"", dates:"2011.11.04–2012.01.15", venue:"블루스퀘어 우리은행홀", cast:"이네즈 이영미"}]},
 
 "브루클린": { genre:"뮤지컬", debut:2012, role:"출연", status:"closed", page:"브루클린",
+  poster:"assets/posters/브루클린_2012.gif",
   seasons:[
     {year:2012, label:"", dates:"2012.11.30–2013.02.24", venue:"충무아트센터 중극장 블랙", cast:"파라다이스 이영미"}]},
 
@@ -109,14 +119,17 @@ window.WORKS_DATA = {
     {year:2013, label:"", dates:"2013.11.19–2014.02.09", venue:"충무아트센터 대극장", cast:"알돈자 이영미"}]},
 
 "스팸어랏": { genre:"뮤지컬", debut:2013, role:"출연", status:"closed", page:"스팸어랏",
+  poster:"assets/posters/스팸어랏_2013.gif",
   seasons:[
     {year:2013, label:"", dates:"2013.05.16–09.01", venue:"두산아트센터 연강홀", cast:"호수의 여인 이영미"}]},
 
 "셜록홈즈2": { genre:"뮤지컬", debut:2014, role:"출연", status:"closed", page:"셜록홈즈2",
+  poster:"assets/posters/셜록홈즈2_2014.gif",
   seasons:[
     {year:2014, label:"", dates:"2014.03.01–03.30", venue:"광림아트센터 BBCH홀", cast:"제인 왓슨 이영미"}]},
 
 "벽을 뚫는 남자": { genre:"뮤지컬", debut:2015, role:"출연", status:"closed", page:"벽을 뚫는 남자",
+  poster:"assets/posters/벽을뚫는남자_2015.gif",
   seasons:[
     {year:2015, label:"", dates:"2015.11.21–2016.02.14", venue:"홍익대 대학로 아트센터 대극장", cast:"야채장사 / 매춘부 이영미"}]},
 
@@ -126,6 +139,7 @@ window.WORKS_DATA = {
     {year:2015, label:"", dates:"2015.06.07–09.13", venue:"샤롯데씨어터", cast:"마리아 이영미"}]},
 
 "마리아 마리아": { genre:"뮤지컬", debut:2016, role:"출연", status:"closed", page:"마리아 마리아",
+  poster:"assets/posters/마리아마리아_2016.gif",
   seasons:[
     {year:2016, label:"", dates:"2016.03.22–04.17", venue:"광림아트센터 BBCH홀", cast:"마리아 이영미"}]},
 
@@ -159,6 +173,7 @@ window.WORKS_DATA = {
     {year:2019, label:"", dates:"2019.08.27–10.04", venue:"JTN 아트홀 1관", cast:"그리스월드 이영미"}]},
 
 "헤카베": { genre:"연극", debut:2019, role:"출연", status:"closed", page:"헤카베",
+  poster:"assets/posters/헤카베_2019.gif",
   seasons:[
     {year:2019, label:"", dates:"2019.03.06–03.17", venue:"산울림 소극장", cast:"헤카베 이영미"}]},
 
